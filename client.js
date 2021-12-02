@@ -12,14 +12,16 @@ const connect = function() {
 
   conn.on('connect', () => {
     console.log('Successfully connected to game server! 🐍');
-    conn.write('Name: Dominique');
+    conn.write('Name: Dom');
   });
+
 
   conn.on('data', (data) => {
     console.log('Oops, ', data);
   });
 
   return conn;
+
 };
 
 
